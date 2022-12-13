@@ -1,0 +1,30 @@
+.works {
+  padding-top: 0;
+}
+
+.works__list {
+  display: flex;
+  gap: 30px;
+}
+.works__item {
+  position: relative;
+
+  width: calc((100% - 60px) / 3);
+}
+.works__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: var(--work-background-color);
+}

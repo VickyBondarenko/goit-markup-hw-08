@@ -1,0 +1,26 @@
+.feature__list {
+  display: flex;
+  gap: 30px;
+}
+
+.feature__icon {
+  background-color: var(--background-grey-color);
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  display: block;
+  height: 120px;
+}
+
+.feature__title {
+  color: var(--first-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.feature__text {
+  letter-spacing: 0.03em;
+}
