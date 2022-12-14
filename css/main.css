@@ -329,6 +329,7 @@ body {
   flex-flow: column;
   justify-content: space-between;
   padding: 48px 40px;
+  z-index: 2;
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -1112,7 +1113,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
-  gap: 8px;
+  gap: 15px 8px;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
