@@ -4,15 +4,24 @@
   gap: 30px;
 }
 .project__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    @include calc(2, 30px);
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc(3, 30px);
+  }
 }
 
 .project__link {
-  display: block;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
-  transition-duration: var(--trans-dur);
-  transition-timing-function: var(--trans-tim-function);
+  @include transition;
 
   &:focus,
   &:hover {
@@ -20,7 +29,9 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-
+.project__img {
+  width: 100%;
+}
 .project__thumb {
   position: relative;
   overflow: hidden;
@@ -38,8 +49,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition-property: transform;
-  transition-duration: var(--trans-dur);
-  transition-timing-function: var(--trans-tim-function);
+  @include transition;
   overflow: auto;
 
   .project__link:focus &,
@@ -58,9 +68,12 @@
 
 .project__description {
   padding: 20px 24px;
-  border-right: 1px solid var(--first-border-color);
-  border-bottom: 1px solid var(--first-border-color);
-  border-left: 1px solid var(--first-border-color);
+  border: 1px solid var(--first-border-color);
+  border-top: none;
+  flex-grow: 1;
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 .project__title {
   margin-bottom: 4px;

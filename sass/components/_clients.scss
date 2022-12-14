@@ -1,20 +1,28 @@
 .clients__list {
   display: flex;
+  flex-flow: row wrap;
   gap: 30px;
 }
-
+.clients__item {
+  @include calc(2, 30px);
+  @media screen and (min-width: 768px) {
+    @include calc(3, 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include calc(6, 30px);
+  }
+}
 .clients__link {
-  display: block;
-  max-width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 92px;
-  padding: 16px 32px;
   border: 1px solid var(--secondary-border-color);
   border-radius: 4px;
   color: var(--secondary-border-color);
 
   transition-property: border-color, color;
-  transition-duration: var(--trans-dur);
-  transition-timing-function: var(--trans-tim-function);
+  @include transition;
 
   &:hover,
   &:focus {
