@@ -59,6 +59,9 @@
 }
 .newsletter {
   width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+  }
 }
 .newsletter__text {
   font-weight: 700;
