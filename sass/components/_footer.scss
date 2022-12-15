@@ -57,7 +57,9 @@
     margin-bottom: 20px;
   }
 }
-
+.newsletter {
+  width: 100%;
+}
 .newsletter__text {
   font-weight: 700;
   font-size: 14px;
@@ -83,7 +85,6 @@
   }
 }
 .newsletter__input {
-  display: block;
   width: 100%;
   height: 50px;
   background-color: transparent;
@@ -91,8 +92,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  display: flex;
-  align-items: center;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
