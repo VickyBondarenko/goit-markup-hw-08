@@ -328,7 +328,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  padding: 48px 40px;
+  padding: 48px 15px;
   z-index: 2;
   overflow: auto;
   width: 100vw;
@@ -336,6 +336,11 @@ body {
   top: 0;
   margin: auto;
   background-color: var(--background-white-color);
+}
+@media screen and (min-width: 480px) {
+  .mob-menu {
+    padding: 48px 40px;
+  }
 }
 
 .mob-menu__btn-close {
